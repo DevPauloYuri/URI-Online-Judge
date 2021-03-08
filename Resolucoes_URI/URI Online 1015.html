@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var [x1, y1] = prompt().split(" ").map(x => parseFloat(x));
+        var [x2, y2] = prompt().split(" ").map(x => parseFloat(x));
+        var dist = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
+        dist = dist.toFixed(4);
+        console.log(dist);
+    </script>
+</body>
+
+</html>

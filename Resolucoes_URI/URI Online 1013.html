@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var [a, b, c] = prompt().split(" ").map(x => parseInt(x));
+        var maiorAB = ((a + b + Math.abs(a - b)) / 2);
+        var maiorABC = ((c + maiorAB + Math.abs(c - maiorAB)) / 2);
+        console.log(maiorABC + " eh o maior");
+    </script>
+</body>
+
+</html>

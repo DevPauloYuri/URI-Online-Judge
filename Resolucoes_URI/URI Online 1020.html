@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+        // var lines = input.split('\n');
+
+        var entrada = parseInt(prompt());
+        var anos = Math.trunc(entrada / 365);
+        var anosR = entrada - (anos * 365);
+        var meses = Math.trunc(anosR / 30);
+        var dias = anosR - (meses * 30);
+
+        console.log(anos + " ano (s)");
+        console.log(meses + " mes (es)");
+        console.log(dias + " dia (s)");
+    </script>
+</body>
+
+</html>

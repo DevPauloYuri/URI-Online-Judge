@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var [A, B, C] = prompt().split(" ").map(x => parseFloat(x));
+        var delta = Math.pow(B, 2) - 4 * A * C;
+        if (delta < 0 || A === 0) {
+            console.log("Impossivel calcular")
+        } else {
+            var rDelta = Math.sqrt(delta);
+            var r1 = (-B + rDelta) / (2 * A);
+            var r2 = (-B - rDelta) / (2 * A);
+
+            console.log("R1 = " + r1.toFixed(5));
+            console.log("R2 = " + r2.toFixed(5));
+        }
+    </script>
+</body>
+
+</html>

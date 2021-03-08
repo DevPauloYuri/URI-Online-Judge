@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var entrada = parseFloat(prompt("valor"));
+        var n100 = Math.trunc(entrada / 100);
+        var df100 = entrada % 100;
+        var n50 = Math.trunc(df100 / 50);
+        var df50 = df100 % 50;
+        var n20 = Math.trunc(df50 / 20);
+        var df20 = df50 % 20;
+        var n10 = Math.trunc(df20 / 10);
+        var df10 = df20 % 10;
+        var n5 = Math.trunc(df10 / 5);
+        var df5 = df10 % 5;
+        var n2 = Math.trunc(df5 / 2);
+        var df2 = df5 % 2;
+        var m1 = Math.trunc(df2 / 1);
+        var dfM = (df2 % 1) * 100;
+        var m05 = Math.trunc(dfM / 50);
+        var dfM05 = dfM % 50;
+        var m025 = Math.trunc(dfM05 / 25);
+        var dfM025 = dfM05 % 25;
+        var m010 = Math.trunc(dfM025 / 10);
+        var dfM010 = dfM025 % 10;
+        var m005 = Math.trunc(dfM010 / 5);
+        var dfM005 = dfM010 % 5;
+        var m001 = Math.trunc(dfM005 / 1);
+
+        console.log("NOTAS:");
+        console.log(n100 + " nota(s) de R$ 100.00");
+        console.log(n50 + " nota(s) de R$ 50.00");
+        console.log(n20 + " nota(s) de R$ 20.00");
+        console.log(n10 + " nota(s) de R$ 10.00");
+        console.log(n5 + " nota(s) de R$ 5.00");
+        console.log(n2 + " nota(s) de R$ 2.00");
+        console.log("MOEDAS:");
+        console.log(m1 + " moeda(s) de R$ 1.00");
+        console.log(m05 + " moeda(s) de R$ 0.50");
+        console.log(m025 + " moeda(s) de R$ 0.25");
+        console.log(m010 + " moeda(s) de R$ 0.10");
+        console.log(m005 + " moeda(s) de R$ 0.05");
+        console.log(m001 + " moeda(s) de R$ 0.01");
+    </script>
+</body>
+
+</html>
