@@ -18,4 +18,5 @@
   ~~~
   
 ## OUTROS
-  Deixe seu comentário ou sujestão👍
+  Deixe seu comentário ou sujestão👍<br/>
+  [@DevPauloYuri](https://github.com/DevPauloYuri)
