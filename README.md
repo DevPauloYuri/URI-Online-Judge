@@ -19,4 +19,4 @@
   
 ## OUTROS
   Deixe seu [comentário ou sujestão](https://github.com/DevPauloYuri/URI-Online-Judge/discussions)👍<br/>
-  <a href="https://github.com/DevPauloYuri" target="_blank">@DevPauloYuri</a>
+  [@DevPauloYuri](https://github.com/DevPauloYuri)
