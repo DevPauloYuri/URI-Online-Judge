@@ -5,16 +5,16 @@
 ## NOTAS PARA CÓDIGOS EM HTML/JS
   A resposta é somento o que está dentro da tag **_<script>_**.<br/>
   ~~~javascript
-  <script>...</script>
+  1. <script>...</script>
   ~~~
   Na entrada de dados trocar **_prompt()_** por **_lines.shift()_**.<br/>
   ~~~javascript
-  var a = prompt() --> var a = lines.shift()
+  1. var a = prompt() --> var a = lines.shift()
   ~~~
   Manter as 2 primeiras linhas que estão ao abrir o URI.
   ~~~javascript
-  var input = require('fs').readFileSync('/dev/stdin', 'utf8');<br/>
-  var lines = input.split('\n');
+  1. var input = require('fs').readFileSync('/dev/stdin', 'utf8');<br/>
+  2. var lines = input.split('\n');
   ~~~
   
 ## OUTROS
