@@ -18,5 +18,5 @@
   ~~~
   
 ## OUTROS
-  Deixe seu comentário ou sujestão👍<br/>
+  Deixe seu [comentário ou sujestão](https://github.com/DevPauloYuri/URI-Online-Judge/discussions)👍<br/>
   [@DevPauloYuri](https://github.com/DevPauloYuri)
