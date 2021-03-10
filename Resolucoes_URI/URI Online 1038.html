@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanche</title>
+</head>
+
+<body>
+
+    <script>
+
+        const [cod, qnt] = prompt().split(" ").map(x => parseInt(x));
+        const precos = [4, 4.5, 5, 2, 1.5];
+        const preco = precos[cod - 1];
+        const total = (preco * qnt).toFixed(2);
+
+        console.log("Total: R$ " + total);
+
+    </script>
+
+</body>
+
+</html>
