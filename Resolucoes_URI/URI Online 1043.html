@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triângulo</title>
+</head>
+
+<body>
+    <script>
+
+        const [a, b, c] = prompt().split(" ").map(x => parseFloat(x));
+        if (Math.abs(b - c) < a && a < (b + c) &&
+            Math.abs(a - c) < b && b < (a + c) &&
+            Math.abs(a - b) < c && c < (a + b)) {
+
+            const perimetro = a + b + c;
+            console.log("Perimetro = " + perimetro.toFixed(1));
+
+        } else {
+            const area = ((a + b) * c) / 2;
+            console.log("Area = " + area.toFixed(1));
+        }
+
+    </script>
+</body>
+
+</html>

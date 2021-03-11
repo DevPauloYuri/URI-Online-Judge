@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Triângulos</title>
+</head>
+
+<body>
+    <script>
+
+        var [a, b, c] = prompt().split(" ").map(x => parseFloat(x));
+        const ordem = [a, b, c].sort(ordenar).reverse();
+        a = ordem[0];
+        b = ordem[1];
+        c = ordem[2];
+
+        function ordenar(a1, b1) {
+            return a1 - b1;
+        }
+
+        if (a >= b + c) {
+            console.log("NAO FORMA TRIANGULO");
+        } else {
+            if ((a * a) === (b * b) + (c * c)) console.log("TRIANGULO RETANGULO");
+            if ((a * a) > (b * b) + (c * c)) console.log("TRIANGULO OBTUSANGULO");
+            if ((a * a) < (b * b) + (c * c)) console.log("TRIANGULO ACUTANGULO");
+            if (a === b && a === c) {
+                console.log("TRIANGULO EQUILATERO");
+            } else if (a === b || a === c || b === c) {
+                console.log("TRIANGULO ISOSCELES")
+            }
+        }
+
+    </script>
+</body>
+
+</html>l
