@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imposto de Renda</title>
+</head>
+
+<body>
+    <script>
+
+        const entrada = parseFloat(prompt());
+        var menosIsento = 0;
+        var menos8 = 0;
+        var menos18 = 0;
+        var imposto8 = 0;
+        var imposto18 = 0;
+        var imposto28 = 0;
+        var impostos = 0;
+
+        if (entrada <= 2000) {
+            console.log("Isento");
+
+        } else if (entrada >= 2000.01) {
+            menosIsento = entrada - 2000;
+
+            if (entrada <= 3000) {
+                imposto8 = menosIsento * 0.08;
+                console.log("R$ " + imposto8.toFixed(2));
+
+            } else if (entrada >= 3000.01) {
+                imposto8 = 1000 * 0.08;
+                menos8 = menosIsento - 1000;
+
+                if (entrada <= 4500) {
+                    imposto18 = menos8 * 0.18;
+                    impostos = imposto8 + imposto18;
+                    console.log("R$ " + impostos.toFixed(2));
+
+                } else if (entrada > 4500) {
+                    imposto18 = 1500 * 0.18;
+                    menos28 = menos8 - 1500;
+                    imposto28 = menos28 * 0.28;
+                    impostos = imposto8 + imposto18 + imposto28;
+                    console.log("R$ " + impostos.toFixed(2));
+
+                }
+                
+            }
+            
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pares, Ímpares, Positivos e Negativos</title>
+</head>
+
+<body>
+    <script>
+
+        const n1 = parseInt(prompt());
+        const n2 = parseInt(prompt());
+        const n3 = parseInt(prompt());
+        const n4 = parseInt(prompt());
+        const n5 = parseInt(prompt());
+        var numeros = [n1, n2, n3, n4, n5];
+        var numerosPares = [];
+        var numerosImpares = [];
+        var numerosPositivos = [];
+        var numerosNegativos = [];
+
+        for (let i = 0; i <= numeros.length; i++) {
+            if ((numeros[i] % 2) === 0) numerosPares.push(numeros[i]);
+        }
+        const qntPa = numerosPares.length;
+
+        for (let i = 0; i <= numeros.length; i++) {
+            if ((numeros[i] % 2) === 1 || (numeros[i] % 2) === -1) numerosImpares.push(numeros[i]);
+        }
+        const qntIm = numerosImpares.length;
+
+        for (let i = 0; i <= numeros.length; i++) {
+            if (numeros[i] > 0) numerosPositivos.push(numeros[i]);
+        }
+        const qntPo = numerosPositivos.length;
+
+        for (let i = 0; i <= numeros.length; i++) {
+            if (numeros[i] < 0) numerosNegativos.push(numeros[i]);
+        }
+        const qntNe = numerosNegativos.length;
+
+
+        console.log(qntPa + " valor(es) par(es)");
+        console.log(qntIm + " valor(es) impar(es)");
+        console.log(qntPo + " valor(es) positivo(s)");
+        console.log(qntNe + " valor(es) negativo(s)");
+
+    </script>
+</body>
+
+</html>

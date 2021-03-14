@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervalo 2</title>
+</head>
+
+<body>
+    <script>
+
+        const qnt = parseInt(prompt());
+        const numeros = [];
+        const numerosIntervalo = [];
+        const numerosFora = [];
+
+        for (let i = 0; i < qnt; i++) {
+            numeros.push(parseInt(prompt()));
+        }
+
+        for (let i = 0; i < numeros.length; i++) {
+            if (numeros[i] >= 10 && numeros[i] <= 20) {
+                numerosIntervalo.push(numeros[i]);
+            } else {
+                numerosFora.push(numeros[i]);
+            }
+
+        }
+
+        console.log(numerosIntervalo.length + " in");
+        console.log(numerosFora.length + " out");
+
+    </script>
+</body>
+
+</html>

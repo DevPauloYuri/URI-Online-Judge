@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pares entre Cinco Números</title>
+</head>
+
+<body>
+    <script>
+
+        const n1 = parseInt(prompt());
+        const n2 = parseInt(prompt());
+        const n3 = parseInt(prompt());
+        const n4 = parseInt(prompt());
+        const n5 = parseInt(prompt());
+        var numeros = [n1, n2, n3, n4, n5];
+        var numerosPares = [];
+
+        for (let i = 0; i <= numeros.length; i++) {
+            if ((numeros[i] % 2) === 0) numerosPares.push(numeros[i]);
+        }
+        const qnt = numerosPares.length;
+        console.log(qnt + " valores pares");
+
+
+    </script>
+</body>
+
+</html>

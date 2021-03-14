@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Positivos</title>
+</head>
+
+<body>
+    <script>
+
+        const n1 = parseFloat(prompt());
+        const n2 = parseFloat(prompt());
+        const n3 = parseFloat(prompt());
+        const n4 = parseFloat(prompt());
+        const n5 = parseFloat(prompt());
+        const n6 = parseFloat(prompt());
+        var numeros = [n1, n2, n3, n4, n5, n6];
+        var numerosPositivos = [];
+
+        for (let i = 0; i <= numeros.length; i++) {
+            if (numeros[i] > 0) numerosPositivos.push(numeros[i]);
+        }
+        const qnt = numerosPositivos.length;
+        console.log(qnt + " valores positivos");
+
+
+    </script>
+</body>
+
+</html>
