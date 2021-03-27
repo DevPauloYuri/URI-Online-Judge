@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Ímpar</title>
+</head>
+
+<body>
+    <script>
+
+        const qnt = parseInt(prompt());
+
+        for (let i = 0; i < qnt; i++) {
+            var entrada = parseInt(prompt());
+            var paridade = "";
+            var positivoNegativo = "";
+
+            if (entrada === 0) {
+                console.log("NULL");
+
+            } else {
+                (entrada % 2) === 0 ? paridade = "EVEN" : paridade = "ODD";
+                entrada > 0 ? positivoNegativo = "POSITIVE" : positivoNegativo = "NEGATIVE";
+
+                console.log(`${paridade} ${positivoNegativo}`);
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

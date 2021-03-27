@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha Fixa</title>
+</head>
+
+<body>
+    <script>
+
+        function confirm() {
+
+            while (0 === 0) {
+                var x = parseInt(prompt());
+
+                if (x === 2002) {
+                    console.log("Acesso Permitido");
+                    break;
+                } else {
+                    console.log("Senha Invalida");
+                    confirm()
+                    break;
+                }
+            }
+        }
+
+        confirm();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior e Posição</title>
+</head>
+
+<body>
+    <script>
+
+        var meuArray = [];
+
+        function ordenar(a, b) {
+            return a - b;
+        }
+
+        for (let i = 0; i < 100; i++) {
+            meuArray.push(parseInt(prompt()));
+        }
+
+        var arrayOrdenado = meuArray.slice().sort(ordenar);
+        var maior = arrayOrdenado[arrayOrdenado.length - 1];
+        var posicao = meuArray.indexOf(maior);
+
+        console.log(maior);
+        console.log(posicao + 1);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando</title>
+</head>
+
+<body>
+    <script>
+
+        var cont = 1;
+        var calc = 0;
+        var operadores = [];
+        var numeros = [];
+
+        while (0 === 0) {
+            var qnt = parseInt(prompt());
+
+            if (qnt === 0) break;
+
+            console.log(`Teste ${cont}`);
+            cont++;
+
+            op = prompt();
+
+            for (let i = 0; i <= op.length;) {
+                if (op[i] === "+" || op[i] === "-") {
+                    operadores.push(op.slice(i, i + 1));
+                    numeros.push(op.slice(0, i));
+                    op = op.slice(i + 1);
+                    i = 0;
+
+                } else {
+                    i++;
+
+                }
+            }
+
+            numeros.push(op);
+
+            for (let i = 0; i < numeros.length;) {
+                if (i === 0) {
+                    calc += parseInt(numeros[i]);
+                    i++;
+
+                } else {
+                    switch (operadores[i - 1]) {
+                        case "+":
+                            calc += parseInt(numeros[i]);
+                            break;
+
+                        case "-":
+                            calc -= parseInt(numeros[i]);
+                            break;
+
+                    }
+
+                    i++;
+
+                }
+            }
+
+            console.log(calc);
+
+            numeros = [];
+            operadores = [];
+            calc = 0;
+
+            console.log("");
+
+        }
+
+    </script>
+</body>
+
+</html>

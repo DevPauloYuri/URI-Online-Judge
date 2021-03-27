@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médias Ponderadas</title>
+</head>
+
+<body>
+    <script>
+
+        const qnt = parseInt(prompt());
+
+        for (let i = 0; i < qnt; i++) {
+            var [n1, n2, n3] = prompt().split(" ").map(x => parseFloat(x));
+            var media = (((n1 * 2) + (n2 * 3) + (n3 * 5)) / (2 + 3 + 5));
+            console.log(media.toFixed(1));
+        }
+
+    </script>
+</body>
+
+</html>

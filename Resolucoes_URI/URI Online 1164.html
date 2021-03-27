@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Perfeito</title>
+</head>
+
+<body>
+    <script>
+
+        const entrada = parseInt(prompt());
+        var soma = 0;
+
+        for (let i = 0; i < entrada; i++) {
+            var n = parseInt(prompt());
+
+            for (let u = 1; u < n; u++) {
+                if ((n % u) === 0) {
+                    soma += u;
+                }
+            }
+
+            if (soma === n) {
+                console.log(`${n} eh perfeito`);
+            } else {
+                console.log(`${n} nao eh perfeito`);
+            }
+
+            soma = 0;
+        }
+
+    </script>
+</body>
+
+</html>
